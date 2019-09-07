@@ -25,7 +25,8 @@ table {
 	font-size: 30px;
 	font-weight:100;
 }
-th,td{
+th,tr{
 	font-weigh:900;	
+	font-size:40px;
 	background-color:#080808;
 }
