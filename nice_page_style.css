@@ -1,0 +1,61 @@
+.p1_style {
+	background-color: #b3009e;
+	color: #fac3f3;
+	text-shadow: 2px 0 0 #b86eaf;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	border-radius: 30px;
+	line-height: 1.5;
+	padding: 30px;
+	margin-bottom: 10px;
+}
+.Second_p {
+	background-image: url(images/Russia.jpg);
+	border-image-repeat: no-repeat;
+	background-size: cover;
+	margin-left: 10%;
+	margin-right: 30%;
+	color:black;
+}
+
+.p2_style {
+	font-size: 45px;
+	padding-top: 40px;
+	padding-bottom: 200px;
+	padding-left: 20px;
+	font-style: oblique;
+	line-height: 0.7;
+}
+
+.br_plus {
+	margin-bottom: 80px;
+}
+.span_white {
+	color: white;
+}
+.Third_p {
+	background-image: url(images/Physic.jpg);
+	border-image-repeat: no-repeat;
+	background-size: cover;
+	margin-left: 65%;
+	margin-right: 10%;
+	color:white;
+}
+
+.p3_style {	
+	font-size: 40px;
+	padding-top: 20px;
+	background-color: rgba(255,0,0,0.3);
+	border-radius: 30px;
+	padding-bottom: 200px;
+	text-shadow: 2px 0 0 #000;
+	font-style: oblique;
+	
+}
+.quote_owner {
+	font-size: 50px;
+	padding-left: 30%;
+}
