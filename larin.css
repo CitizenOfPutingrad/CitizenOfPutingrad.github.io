@@ -1,6 +1,9 @@
 .hide {
     		display: none;
     	}
+div {
+ align: center;   
+}
     	.hide:target {
     		display: block;
     	}
