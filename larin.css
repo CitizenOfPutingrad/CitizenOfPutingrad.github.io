@@ -1,0 +1,37 @@
+.hide {
+    		display: none;
+    	}
+    	.hide:target {
+    		display: block;
+    	}
+    	p.book:first-letter {
+    		font-size: 200%;
+    		color: red;
+    	}
+    	tr:nth-child(even) {
+    		background-color: blue;
+    	}
+    	tr:nth-child(odd) {
+    		background-color:#0000cc;
+    	}
+    	tr:first-child {
+    		background-color: #eee;
+    	}
+    	tr:last-child {
+    		background-color: red;
+    	}
+    	.nicetext {
+    		font-size: 30px;
+    		color: white;
+    		text-shadow: 2px 0 0 black;
+    	}
+    	#box1 {
+    		color:black;
+    		text-shadow: 2px 0 0 white;
+    	}
+    	#SlavaUkraine {
+    		color:blue;
+    	}
+    	#SlavaUkraine:hover {
+    		color:yellow;
+    	}
