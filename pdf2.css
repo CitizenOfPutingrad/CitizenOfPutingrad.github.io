@@ -44,6 +44,9 @@ a:hover {
 	margin: 0mm 10mm 0mm 10mm;	
 	line-height: 1.2;
 }
+td, th, tr {
+	border: 1px solid black;
+}
 .tag { 
 	color: purple;
 }
@@ -56,6 +59,9 @@ a:hover {
 .attribute {
  	color: green;
  }
+.center {
+	text-align: center;	
+}
 ul li{
 	list-style: cirlce;
 }
