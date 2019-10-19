@@ -1,0 +1,61 @@
+body { 
+	background-color: green;
+ }
+.content { 
+	background-color: purple ;
+	border: 1px black solid;
+	line-height: 1;
+}
+a {
+	color: pink;
+	text-decoration: none;
+}
+a:hover {
+	background-color: #00FFA9;
+}
+.page {
+	background-color: red;
+	line-height: 2;
+	font-size: 16px;
+	width: 210mm;
+	text-indent: 35px;	
+	padding: 20mm 20mm 20mm 30mm;
+	margin: auto;
+	margin-bottom: 3mm;
+}
+#htmlpic {
+	float: right;
+	width: 60mm;
+	margin: 0mm 5mm 5mm 0mm ;
+}
+.highlighting {
+	background-color: #FF00E0;
+	border: 1px black solid;
+}
+.code { 
+	background-color: #00E4B5;
+	padding: 2mm 2mm 2mm 3mm;
+	line-height: 1;
+	border: 1px black solid;
+	text-indent: 1px;	
+}
+.tabl {
+	border: 1 solid black;
+	margin: 0mm 10mm 0mm 10mm;	
+	line-height: 1.2;
+}
+.tag { 
+	color: purple;
+}
+.comment { 
+	color: gray;
+ }
+.value {
+	color: yellow;
+}
+.attribute {
+ 	color: green;
+ }
+ul li{
+	list-style: cirlce;
+}
