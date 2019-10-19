@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="pdf2.css">
-	<title>PDF файл неоригинал</title>
+	<title>PDF файл не оригинал</title>
 </head>
 <body>
 	<div class="page">
@@ -24,7 +24,7 @@
 			</ol>
 		</div>
 		<h3 id="begin">Основы HTML</h3>
-		<img src="html_pic.png" id="htmlpic">
+		<img src="html_pic.png" id="htmlpic" alt="картинка с html">
 		<p><b>Основы HTML</b> содержат основные правила языка HTML, описание структуры HTML-страницы, отношения в структуре HTML-документа между HTML-элементами.</p>
 	
 		<p>HTML-документ — это обычный текстовый документ, может быть создан как в обычном текстовом редакторе <b>(Блокнот)</b>, так и в специализированном, с подсветкой кода <b>(Notepad++, Visual Studio Code и т.п.)</b>. HTML-документ имеет расширение <span class="highlighting">.html.</span></p>
@@ -59,11 +59,11 @@
 
 		<p>Элементы, находящиеся внутри тега <span class="highlighting">&lt;html&gt;</span>, образуют дерево документа, так называемую <b>объектную модель документа, DOM (document object model)</b>. При этом элемент <span class="highlighting">&lt;html&gt;</span> является корневым элементом.</p>
 
-		<figure><img src="DOM.png"><figcaption><p align="center">РИС. 1. ПРОСТЕЙШАЯ СТРУКТУРА ВЕБ-СТРАНИЦЫ</p></figcaption></figure>
+		<img src="DOM.png" alt="Дерево DOM"><p class="center">РИС. 1. ПРОСТЕЙШАЯ СТРУКТУРА ВЕБ-СТРАНИЦЫ</p>
 
 		<p>Чтобы разобраться во взаимодействии элементов веб-страницы, необходимо рассмотреть так называемые <b>«родственные отношения»</b> между элементами. Отношения между множественными вложенными элементами подразделяются на родительские, дочерние и сестринские.</p>
 
-		<p><b>Предок</b> — элемент, который заключает в себе другие элементы. На рисунке 1 предком для всех элементов является <span class="highlighting">&lt;html&gt;</span>. В то же время элемент <span class="highlighting">&ltbody&gt</span> является предком для всех содержащихся в нем тегов: <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;p&gt;</span>, <span class="highlighting">&lt;span&gt;</span>, <span class="highlighting">&lt;nav&gt;</span> и т.д.</p>
+		<p><b>Предок</b> — элемент, который заключает в себе другие элементы. На рисунке 1 предком для всех элементов является <span class="highlighting">&lt;html&gt;</span>. В то же время элемент <span class="highlighting">&lt;body&gt;</span> является предком для всех содержащихся в нем тегов: <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;p&gt;</span>, <span class="highlighting">&lt;span&gt;</span>, <span class="highlighting">&lt;nav&gt;</span> и т.д.</p>
 
 		<p><b>Потомок</b> — элемент, расположенный внутри одного или более типов элементов. Например, <span class="highlighting">&lt;body&gt;</span> является потомком <span class="highlighting">&lt;html&gt;</span>, а элемент <span class="highlighting">&lt;p&gt;</span> является потомком одновременно для <span class="highlighting">&lt;body&gt;</span> и <span class="highlighting">&lt;html&gt;</span>.</p>
 
@@ -71,13 +71,12 @@
 
 		<p><b>Дочерний элемент</b> — элемент, непосредственно подчиненный другому элементу более высокого уровня. На рисунке 1 только элементы <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;h2&gt;</span>, <span class="highlighting">&lt;p&gt;</span> и <span class="highlighting">&lt;nav&gt;</span> являются дочерними по отношению к <span class="highlighting">&lt;body&gt;</span>.</p>
 
-		<p><b>Сестринский элемент</b> — элемент, имеющий общий родительский элемент с рассматриваемым, так называемые элементы одного уровня. На рисунке 1 <span class="highlighting">&lt;head&gt;</span> и <span class="highlighting">&lt;body&gt;</span> — элементы одного уровня, так же как и элементы <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;h2&gt;</span> и <span class="highlighting">&l;tp&gt;</span> являются между собой сестринскими.</p>
+		<p><b>Сестринский элемент</b> — элемент, имеющий общий родительский элемент с рассматриваемым, так называемые элементы одного уровня. На рисунке 1 <span class="highlighting">&lt;head&gt;</span> и <span class="highlighting">&lt;body&gt;</span> — элементы одного уровня, так же как и элементы <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;h2&gt;</span> и <span class="highlighting">&lt;tp&gt;</span> являются между собой сестринскими.</p>
 	</div> <!-- Тут я хотел красиво вставить разрывы страницы, но валидатор жалуется на то, что </div> заходит в <ol> -->
 	<div class="page">
-		<ol>
-		<li><h3 id="html">Элемент &lt;html&gt;</h3></li>
+		<h3 id="html">1. Элемент &lt;html&gt;</h3>
 		<p>Является корневым элементом документа. Все остальные элементы содержатся внутри тегов <span class="highlighting">&lt;html&gt;</span>...<span class="highlighting">&lt;/html&gt;</span>. Все, что находится за пределами тегов, не воспринимается браузером как код HTML и никак им не обрабатывается. Для элемента доступны атрибуты <span class="highlighting">manifest</span> и <span class="highlighting">xmlns</span> , а также глобальные атрибуты.</p>
-		<p align="center">ТАБЛИЦА 1. АТРИБУТЫ ТЕГА &lt;HTML&gt;</p><table border="1" class="tabl" align="center"> 
+		<p class="center">ТАБЛИЦА 1. АТРИБУТЫ ТЕГА &lt;HTML&gt;</p><table class="tabl"> 
 			<tr>
 				<th>Атрибут</th>
 				<th>Описание, принимаемое значение</th>
@@ -88,15 +87,15 @@
 			</tr>
 		</table>
 		
-		<li><h3 id="head">Элемент &lt;head&gt;</h3></li>
+		<h3 id="head">2. Элемент &lt;head&gt;</h3>
 		<p>Раздел <span class="highlighting">&lt;head&gt;</span>...<span class="highlighting">&lt;/head&gt;</span> содержит техническую информацию о странице: заголовок, описание, ключевые слова для поисковых машин, кодировку и т.д. Введенная в нем информация не отображается в окне браузера, однако содержит данные, которые указывают браузеру, как следует обрабатывать страницу.</p>
 		<p>Для элемента доступны глобальные атрибуты.</p>
 
-		<li><h3 id="title">Элемент &lt;title&gt;</h3></li>
+		<h3 id="title">3. Элемент &lt;title&gt;</h3>
 		<p>Обязательным тегом раздела <span class="highlighting">&lt;head&gt;</span> является тег <span class="highlighting">&lt;title&gt;</span>. Текст, размещенный внутри этого тега, отображается в строке заголовка веб-браузера. Длина заголовка должна быть не более 60 символов, чтобы полностью поместиться в заголовке. Текст заголовка должен содержать максимально полное описание содержимого веб-страницы.</p>
 		<p>Для элемента доступны глобальные атрибуты.</p>
 
-		<li><h3 id="meta">Элемент &lt;meta&gt;</h3></li>
+		<h3 id="meta">4. Элемент &lt;meta&gt;</h3>
 		<p>Необязательным тегом раздела <span class="highlighting">&lt;head&gt;</span> является одинарный тег <span class="highlighting">&lt;meta&gt;</span>. С его помощью можно задать описание содержимого страницы и ключевые слова для поисковых машин, автора HTML-документа и прочие свойства метаданных. Элемент <span class="highlighting">&lt;head&gt;</span> может содержать несколько элементов <span class="highlighting">&lt;meta&gt;</span>, потому что в зависимости от используемых атрибутов они несут различную информацию.</p>
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"description"</span> <span class="attribute">content</span>=<span class="indigoo">"Описание содержимого страницы"</span>&gt;<br>
 			&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"keywords"</span> <span class="attribute">content</span>=<span class="indigoo">"Ключевые слова через запятую"</span>&gt;</p>
@@ -107,18 +106,22 @@
 			&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"keywords"</span> <span class="attribute">lang</span>=<span class="indigoo">"en"</span> <span class="attribute">content</span>=<span class="indigoo">"Keywords"</span>&gt;</p>
 		<p>С помощью тега <span class="highlighting">&lt;meta&gt;</span> можно запретить или разрешить индексацию веб-страницы поисковыми машинами:</p>
 		<p>Индексация и переход по ссылкам разрешены:</p>
-		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"robots"</span> <span class="attribute">content</span>=<span class="indigoo">"index, follow"</span>&g;t</p>
+		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"robots"</span> <span class="attribute">content</span>=<span class="indigoo">"index, follow"</span>&gt;</p>
 		<p>Индексация разрешена, переход по ссылкам запрещен:</p>
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"robots"</span> <span class="attribute">content</span>=<span class="indigoo">"index, nofollow"</span>&gt;</p>
 		<p>Индексация и переход по ссылкам запрещены:</p>
+	</div>
+	<div class="page">
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"robots"</span> <span class="attribute">content</span>=<span class="indigoo">"noindex, nofollow"</span>&gt;</p>
 		<p>Для автоматической перезагрузки страницы через заданный промежуток времени нужно воспользоваться значением <span class="highlighting">refresh</span>:</p>
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">http-equiv</span>=<span class="indigoo">"refresh"</span> <span class="attribute">content</span>=<span class="indigoo">"30"</span>&gt;</p>
 		<p>Страница будет перезагружена через 30 секунд. Чтобы перебросить посетителя на другую страницу, нужно указать URL-адрес в параметре <span class="highlighting">url</span>: </p>
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">http-equiv</span>=<span class="indigoo">"refresh"</span> <span class="attribute">content</span>=<span class="indigoo">"0"</span> <span class="attribute">url</span>=<span class="indigoo">http://yandex.ru/"</span>&gt;</p>
 		<p>Для элемента <span class="highlighting">&lt;meta&gt;</span> доступны атрибуты <span class="highlighting">charset</span>, <span class="highlighting">content</span>, <span class="highlighting">http-equiv</span>, <span class="highlighting">name</span>, а также глобальные атрибуты.</p>
-		<p align="center">ТАБЛИЦА 2. АТРИБУТЫ ТЕГА &lt;META&gt;</p>
-			<table border="1" class="tabl" align="center">
+	</div>
+	<div class="page">
+		<p class="center">ТАБЛИЦА 2. АТРИБУТЫ ТЕГА &lt;META&gt;</p>
+			<table class="tabl">
 			<tr>
 				<th>Атрибут</th>
 				<th>Описание, принимаемое значение</th>
@@ -140,7 +143,7 @@
 				<td>Ассоциируется со значением, содержащемся в атрибуте <span class="highlighting">content</span>. Не должен использоваться в случае, если для элемента уже заданы атрибуты <span class="highlighting">http-equiv</span> , <span class="highlighting">charset</span> или <span class="highlighting">itemprop</span>. <span class="highlighting">application-name</span> указывает название веб-приложения, используемого на странице. authorуказывает имя автора документа в свободном формате. <span class="highlighting">description</span> определяет краткое описание к содержимому страницы, например: <span class="highlighting">&lt;meta name="description" content="Описание содержимого страницы"&gt;</span> <span class="highlighting">generator</span> указывает один из пакетов программного обеспечения, используемого для создания документа, например: <span class="highlighting">&lt;meta name="generator" content="WordPress 4.0"&gt;</span>. <span class="highlighting">keywords</span> . содержит список ключевых слов, разделенных запятыми, соответствующих содержимому страницы, например: <span class="highlighting">&lt;meta name="keywords" content="Ключевые слова через запятую"&gt;</span>. Также атрибут name может принимать следующие значения из расширенной спецификации, такие как <span class="highlighting">creator</span> , <span class="highlighting">googlebot</span>, <span class="highlighting">publisher</span> , <span class="highlighting">robots</span> , <span class="highlighting">slurp</span>, <span class="highlighting">viewport</span>, хотя ни одно из них еще не было официально принято.</td>
 			</tr>
 		</table>
-		<li><h3 id="style">Элемент &lt;style&gt;</h3></li>
+		<h3 id="style">5. Элемент &lt;style&gt;</h3>
 		<p>Внутри этого элемента задаются стили, которые используются на странице. Для задания стилей в HTML-документе используется язык CSS. Таких элементов на странице может быть несколько.</p>
 		<p>Для элемента доступны атрибуты <span class="highlighting">media</span> , <span class="highlighting">scoped</span>, <span class="highlighting">type</span>, а также глобальные атрибуты.</p>
 		<p>Внутрь этого элемента можно записывать код форматирования как самих элементов вебстраницы, так и веб-страницы целиком</p>
@@ -149,16 +152,17 @@
 			width: 200px;<br>
 			height: 300px;<br>
 			background-color: #ef4444;<br>
-			color: #666666;<br><
+			color: #666666;<br>
 			}<br>
 			&lt;<span class="tag">/style</span>>&gt;</p>
 		<p>Чтобы подключить к элементу заданный стиль, необходимо через атрибут <span class="highlighting">class</span> (или <span class="highlighting">id</span>) присвоить элементу соответствующее название:</p>
-		<p class="code">&lt;<span class="tag">div <span class="attribute">class=<span class="indigoo">"paper"&gt;<br>
+		<p class="code">&lt;<span class="tag">div</span> <span class="attribute">class=</span><span class="indigoo">"paper"</span>&gt;<br>
 			...<br>
 			&lt;<span class="tag">/div</span>&gt;</p>
 		<p>CSS-код можно встраивать непосредственно в элемент разметки в виде значение атрибута <span class="highlighting">style</span> , например:</p>
 		<p class="code">&lt;<span class="tag">p</span> <span class="attribute">style</span>=<span class="indigoo">"color: #666666; background-color: #ef4444; padding: 20px;"</span>&gt;</p>
-		<p align="center">ТАБЛИЦА 3. АТРИБУТЫ ТЕГА &lt;STYLE&gt;</p><table border="1" class="tabl" align="center">
+		<p class="center">ТАБЛИЦА 3. АТРИБУТЫ ТЕГА &lt;STYLE&gt;</p>
+		<table class="tabl">
 			<tr>
 				<th>Атрибут</th>
 				<th>Описание, принимаемое значение</th>
@@ -177,7 +181,7 @@
 			</tr>
 		</table>
 
-		<li><h3 id="link">>Элемент &lt;link&gt;</h3></li>
+		<h3 id="link">6. Элемент &lt;link&gt;</h3>
 		<p>Задать стили для документа можно также при помощи другого способа — записать их в отдельный файл с расширением <span class="highlighting">.css</span>, например, <span class="highlighting">style.css</span> .</p>
 		<p>Подключить файл со стилями к веб-странице можно двумя способами: через директиву <span class="highlighting">@import url</span></p>
 		<p class="code">&lt;!DOCTYPE html&gt;<br>
@@ -191,8 +195,11 @@
 			&lt;<span class="tag">/head</span>&gt;<br></p>
 		<p>с использованием элемента <span class="highlighting">&lt;link&gt;</span>. Элемент не требует закрывающего тега. Данный элемент определяет отношение между текущей страницей и другими документами. Таких элементов на странице может быть несколько. Запись будет иметь следующий вид:</p>
 		<p class="code">&lt;<span class="tag">link</span> <span class="attribute">rel</span>="stylesheet" href="style.css" <span class="attribute">type</span>="text/css"&gt;</p>
+	</div>
+	<div class="page">
 		<p>Для элемента доступны атрибуты <span class="highlighting">href</span>, <span class="highlighting">hreflang</span> , <span class="highlighting">media</span> , <span class="highlighting">rel</span>, <span class="highlighting">type</span>, а также глобальные атрибуты.</p>
-		<p align="center">ТАБЛИЦА 4. АТРИБУТЫ ТЕГА &lt;LINK&gt;</p></figcaption><table border="1" class="tabl" align="center">
+		<p class="center">ТАБЛИЦА 4. АТРИБУТЫ ТЕГА &lt;LINK&gt;</p>
+		<table class="tabl">
 			<tr>
 				<th>Атрибут</th>
 				<th>Описание, принимаемое значение</th>
@@ -219,7 +226,7 @@
 			</tr>
 			<tr>
 				<td><span class="highlighting">rel</span></td>
-				<td>Атрибут определяет отношения между текущим документом и документом, на который идет ссылка. <span class="highlighting">alternate</span> — ссылка на тот же документ, но в другом формате (например, страницы для печати, перевод, зеркало, лента в формате RSS или Atom), <span class="highlighting">&lt;link rel="alternate stylesheet" type="text/css" title="small_font" href="small-font.css"&gt;</span>. <span class="highlighting">&lt;link rel="alternate" type="application/rss+xml" title="my_RSS" href="index.xml"&gt;</span> <span class="highlighting">&lt;link rel="alternate" type="application/atom+xml" title="News" href="/atom.xml? type=news"&gt;</span> <span class="highlighting">archives</span> — указывает на то, что документ по ссылке представляет исторический интерес. Ссылка может указывать на коллекцию записей, документов и других материалов. <span class="highlighting">author</span> ссылка на страницу об авторе документа или на страницу с контактными данными автора. <span class="highlighting">bookmark</span> ссылка на ближайшего предка статьи, являющегося связующим звеном, или на раздел статьи, наиболее тесно связанных с элементом, если нет предка. <span class="highlighting">external</span> используется для указания того, что страница на которую ведет ссылка не являются частью данного сайта. <span class="highlighting">first</span> указывает ссылку, ведущую на первый документ из последовательности документов. <span class="highlighting">help</span> ссылка на документ со справкой. <span class="highlighting">icon</span> определяет путь к иконке, которая будет использована для текущего документа. <span class="highlighting">last</span> указывает ссылку, ведущую на последний документ в последовательности документов. <span class="highlighting">license</span> ссылка на сведения об авторских правах для документа. <span class="highlighting">next</span> указывает, что этот документ является частью серии, и что ссылка ведет на следующий документ в этой серии. <span class="highlighting">&lt;link rel="next" href="/next.html" type="text/html" title="Следующая страница"&gt;</span> <span class="highlighting">nofollow</span> указывает на то, что ссылка не одобрена автором страницы или что ссылка носит коммерческий характер. <span class="highlighting">noreferrer</span> указывает на то, что заголовок запроса клиента, содержащий url источника запроса, не должен передаваться при переходе по ссылке. <span class="highlighting">pingback</span> указывает адрес пингбэк-сервера, что дает возможность для блога автоматически оповещать сайты, ссылающиеся на него. <span class="highlighting">prefetch</span> указывает, что следует заранее кэшировать файл, на который ведет ссылка. <span class="highlighting">prev</span> указывает, что этот документ является частью серии, и что ссылка ведет на предыдущий документ в этой серии. <span class="highlighting">&lt;link rel="prev" href="/next.html" type="text/html" title="Предыдущая страница"&gt;</span> <span class="highlighting">search</span> указывает, что ссылаемый документ содержит интерфейс поиска и связанных с ним ресурсов. <span class="highlighting">sidebar</span> указывает, что ссылаемый документ, если это возможно, будет показан в дополнительном контексте браузера, и некоторые браузеры при щелчке по гиперссылке открывают окно для добавления ссылки в панель закладок. <span class="highlighting">stylesheet</span> ссылка на внешний файл, который будет использоваться в качестве таблицы стилей для данного документа. <span class="highlighting">tag</span> указывает на то, что метка, на которую ведет гиперссылка, относится к данному документу. <span class="highlighting">up<? указывает, что страница является частью иерархической структуры, и что гиперссылка ведет на более высокий уровень ресурса в структуре.</td>
+				<td>Атрибут определяет отношения между текущим документом и документом, на который идет ссылка. <span class="highlighting">alternate</span> — ссылка на тот же документ, но в другом формате (например, страницы для печати, перевод, зеркало, лента в формате RSS или Atom), <span class="highlighting">&lt;link rel="alternate stylesheet" type="text/css" title="small_font" href="small-font.css"&gt;</span>. <span class="highlighting">&lt;link rel="alternate" type="application/rss+xml" title="my_RSS" href="index.xml"&gt;</span> <span class="highlighting">&lt;link rel="alternate" type="application/atom+xml" title="News" href="/atom.xml? type=news"&gt;</span> <span class="highlighting">archives</span> — указывает на то, что документ по ссылке представляет исторический интерес. Ссылка может указывать на коллекцию записей, документов и других материалов. <span class="highlighting">author</span> ссылка на страницу об авторе документа или на страницу с контактными данными автора. <span class="highlighting">bookmark</span> ссылка на ближайшего предка статьи, являющегося связующим звеном, или на раздел статьи, наиболее тесно связанных с элементом, если нет предка. <span class="highlighting">external</span> используется для указания того, что страница на которую ведет ссылка не являются частью данного сайта. <span class="highlighting">first</span> указывает ссылку, ведущую на первый документ из последовательности документов. <span class="highlighting">help</span> ссылка на документ со справкой. <span class="highlighting">icon</span> определяет путь к иконке, которая будет использована для текущего документа. <span class="highlighting">last</span> указывает ссылку, ведущую на последний документ в последовательности документов. <span class="highlighting">license</span> ссылка на сведения об авторских правах для документа. <span class="highlighting">next</span> указывает, что этот документ является частью серии, и что ссылка ведет на следующий документ в этой серии. <span class="highlighting">&lt;link rel="next" href="/next.html" type="text/html" title="Следующая страница"&gt;</span> <span class="highlighting">nofollow</span> указывает на то, что ссылка не одобрена автором страницы или что ссылка носит коммерческий характер. <span class="highlighting">noreferrer</span> указывает на то, что заголовок запроса клиента, содержащий url источника запроса, не должен передаваться при переходе по ссылке. <span class="highlighting">pingback</span> указывает адрес пингбэк-сервера, что дает возможность для блога автоматически оповещать сайты, ссылающиеся на него. <span class="highlighting">prefetch</span> указывает, что следует заранее кэшировать файл, на который ведет ссылка. <span class="highlighting">prev</span> указывает, что этот документ является частью серии, и что ссылка ведет на предыдущий документ в этой серии. <span class="highlighting">&lt;link rel="prev" href="/next.html" type="text/html" title="Предыдущая страница"&gt;</span> <span class="highlighting">search</span> указывает, что ссылаемый документ содержит интерфейс поиска и связанных с ним ресурсов. <span class="highlighting">sidebar</span> указывает, что ссылаемый документ, если это возможно, будет показан в дополнительном контексте браузера, и некоторые браузеры при щелчке по гиперссылке открывают окно для добавления ссылки в панель закладок. <span class="highlighting">stylesheet</span> ссылка на внешний файл, который будет использоваться в качестве таблицы стилей для данного документа. <span class="highlighting">tag</span> указывает на то, что метка, на которую ведет гиперссылка, относится к данному документу. <span class="highlighting">up</span> указывает, что страница является частью иерархической структуры, и что гиперссылка ведет на более высокий уровень ресурса в структуре.</td>
 			</tr>
 			<tr>
 				<td><span class="highlighting">sizes</span></td>
@@ -233,8 +240,7 @@
 				<td><span class="highlighting">type</span></td>
 				<td>Определяет MIME-тип документа, на который идет ссылка. В данном случае он принимает значение <span class="highlighting">"text/css"</span> .</td>
 			</tr>
-		</table></figure>
-		</ol>
+		</table>
 	</div>
 </body>
 </html>
