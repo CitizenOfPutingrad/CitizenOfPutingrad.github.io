@@ -74,8 +74,7 @@
 		<p><b>Сестринский элемент</b> — элемент, имеющий общий родительский элемент с рассматриваемым, так называемые элементы одного уровня. На рисунке 1 <span class="highlighting">&lt;head&gt;</span> и <span class="highlighting">&lt;body&gt;</span> — элементы одного уровня, так же как и элементы <span class="highlighting">&lt;h1&gt;</span>, <span class="highlighting">&lt;h2&gt;</span> и <span class="highlighting">&lt;tp&gt;</span> являются между собой сестринскими.</p>
 	</div> <!-- Тут я хотел красиво вставить разрывы страницы, но валидатор жалуется на то, что </div> заходит в <ol> -->
 	<div class="page">
-		<ol>
-		<li><h3 id="html">Элемент &lt;html&gt;</h3></li>
+		<h3 id="html">1. Элемент &lt;html&gt;</h3>
 		<p>Является корневым элементом документа. Все остальные элементы содержатся внутри тегов <span class="highlighting">&lt;html&gt;</span>...<span class="highlighting">&lt;/html&gt;</span>. Все, что находится за пределами тегов, не воспринимается браузером как код HTML и никак им не обрабатывается. Для элемента доступны атрибуты <span class="highlighting">manifest</span> и <span class="highlighting">xmlns</span> , а также глобальные атрибуты.</p>
 		<p align="center">ТАБЛИЦА 1. АТРИБУТЫ ТЕГА &lt;HTML&gt;</p><table border="1" class="tabl" align="center"> 
 			<tr>
@@ -88,15 +87,15 @@
 			</tr>
 		</table>
 		
-		<li><h3 id="head">Элемент &lt;head&gt;</h3></li>
+		<h3 id="head">2. Элемент &lt;head&gt;</h3>
 		<p>Раздел <span class="highlighting">&lt;head&gt;</span>...<span class="highlighting">&lt;/head&gt;</span> содержит техническую информацию о странице: заголовок, описание, ключевые слова для поисковых машин, кодировку и т.д. Введенная в нем информация не отображается в окне браузера, однако содержит данные, которые указывают браузеру, как следует обрабатывать страницу.</p>
 		<p>Для элемента доступны глобальные атрибуты.</p>
 
-		<li><h3 id="title">Элемент &lt;title&gt;</h3></li>
+		<h3 id="title">3. Элемент &lt;title&gt;</h3>
 		<p>Обязательным тегом раздела <span class="highlighting">&lt;head&gt;</span> является тег <span class="highlighting">&lt;title&gt;</span>. Текст, размещенный внутри этого тега, отображается в строке заголовка веб-браузера. Длина заголовка должна быть не более 60 символов, чтобы полностью поместиться в заголовке. Текст заголовка должен содержать максимально полное описание содержимого веб-страницы.</p>
 		<p>Для элемента доступны глобальные атрибуты.</p>
 
-		<li><h3 id="meta">Элемент &lt;meta&gt;</h3></li>
+		<h3 id="meta">4. Элемент &lt;meta&gt;</h3>
 		<p>Необязательным тегом раздела <span class="highlighting">&lt;head&gt;</span> является одинарный тег <span class="highlighting">&lt;meta&gt;</span>. С его помощью можно задать описание содержимого страницы и ключевые слова для поисковых машин, автора HTML-документа и прочие свойства метаданных. Элемент <span class="highlighting">&lt;head&gt;</span> может содержать несколько элементов <span class="highlighting">&lt;meta&gt;</span>, потому что в зависимости от используемых атрибутов они несут различную информацию.</p>
 		<p class="code">&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"description"</span> <span class="attribute">content</span>=<span class="indigoo">"Описание содержимого страницы"</span>&gt;<br>
 			&lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="indigoo">"keywords"</span> <span class="attribute">content</span>=<span class="indigoo">"Ключевые слова через запятую"</span>&gt;</p>
@@ -140,7 +139,7 @@
 				<td>Ассоциируется со значением, содержащемся в атрибуте <span class="highlighting">content</span>. Не должен использоваться в случае, если для элемента уже заданы атрибуты <span class="highlighting">http-equiv</span> , <span class="highlighting">charset</span> или <span class="highlighting">itemprop</span>. <span class="highlighting">application-name</span> указывает название веб-приложения, используемого на странице. authorуказывает имя автора документа в свободном формате. <span class="highlighting">description</span> определяет краткое описание к содержимому страницы, например: <span class="highlighting">&lt;meta name="description" content="Описание содержимого страницы"&gt;</span> <span class="highlighting">generator</span> указывает один из пакетов программного обеспечения, используемого для создания документа, например: <span class="highlighting">&lt;meta name="generator" content="WordPress 4.0"&gt;</span>. <span class="highlighting">keywords</span> . содержит список ключевых слов, разделенных запятыми, соответствующих содержимому страницы, например: <span class="highlighting">&lt;meta name="keywords" content="Ключевые слова через запятую"&gt;</span>. Также атрибут name может принимать следующие значения из расширенной спецификации, такие как <span class="highlighting">creator</span> , <span class="highlighting">googlebot</span>, <span class="highlighting">publisher</span> , <span class="highlighting">robots</span> , <span class="highlighting">slurp</span>, <span class="highlighting">viewport</span>, хотя ни одно из них еще не было официально принято.</td>
 			</tr>
 		</table>
-		<li><h3 id="style">Элемент &lt;style&gt;</h3></li>
+		<h3 id="style">5. Элемент &lt;style&gt;</h3>
 		<p>Внутри этого элемента задаются стили, которые используются на странице. Для задания стилей в HTML-документе используется язык CSS. Таких элементов на странице может быть несколько.</p>
 		<p>Для элемента доступны атрибуты <span class="highlighting">media</span> , <span class="highlighting">scoped</span>, <span class="highlighting">type</span>, а также глобальные атрибуты.</p>
 		<p>Внутрь этого элемента можно записывать код форматирования как самих элементов вебстраницы, так и веб-страницы целиком</p>
@@ -177,7 +176,7 @@
 			</tr>
 		</table>
 
-		<li><h3 id="link">>Элемент &lt;link&gt;</h3></li>
+		<h3 id="link">6. Элемент &lt;link&gt;</h3>
 		<p>Задать стили для документа можно также при помощи другого способа — записать их в отдельный файл с расширением <span class="highlighting">.css</span>, например, <span class="highlighting">style.css</span> .</p>
 		<p>Подключить файл со стилями к веб-странице можно двумя способами: через директиву <span class="highlighting">@import url</span></p>
 		<p class="code">&lt;!DOCTYPE html&gt;<br>
@@ -234,7 +233,6 @@
 				<td>Определяет MIME-тип документа, на который идет ссылка. В данном случае он принимает значение <span class="highlighting">"text/css"</span> .</td>
 			</tr>
 		</table></figure>
-		</ol>
 	</div>
 </body>
 </html>
