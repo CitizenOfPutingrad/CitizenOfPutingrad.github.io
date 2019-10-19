@@ -40,7 +40,8 @@ a:hover {
 	text-indent: 1px;	
 }
 .tabl {
-	border: 1 solid black;
+	border-collapse: collapse;
+	border: 2px solid black;
 	margin: 0mm 10mm 0mm 10mm;	
 	line-height: 1.2;
 }
