@@ -56,6 +56,9 @@ a:hover {
 .attribute {
  	color: red;
  }
+p.center {
+	text-align: center;	
+}
 ul li{
 	list-style: square;
 }
