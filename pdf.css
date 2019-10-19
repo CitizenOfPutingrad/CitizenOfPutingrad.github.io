@@ -44,6 +44,9 @@ a:hover {
 	margin: 0mm 10mm 0mm 10mm;	
 	line-height: 1;
 }
+td, th, tr {
+	border: 1px solid black;
+}
 .tag { 
 	color: blue;
 }
@@ -56,7 +59,7 @@ a:hover {
 .attribute {
  	color: red;
  }
-p.center {
+.center {
 	text-align: center;	
 }
 ul li{
