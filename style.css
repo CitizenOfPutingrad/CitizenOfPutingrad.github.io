@@ -21,6 +21,9 @@ a:hover {
 	margin-right: 5%;
 	border-radius: 5px;
 }
+.divcenter {
+	text-align: center;		
+}
 table {
 	font-size: 30px;
 	font-weight:100;
