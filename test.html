@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>		
-    	
+    	<meta charset="UTF-8">
         <title>Мой сайт для души</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="test.css">
         <link rel="shortcut icon" href="images/Bee_icon.png" type="image/png">
+        <script type="text/javascript" src="script.js"></script>
 	</head>
 	<body class="FirstBackground VisibleText">
-		<div class="DivBackground">
+		<div class="DivBackground divtest">
 		<h1> Тест по теме "постирония"!</h1>
-		<form class="divtest">
-			<ol>
-			<li><p><b>Кто стал президентов РФ в 20!8 году?</b></p>
-			<p><input type="checkbox" name="answer" value="a1">Путин<Br>
-			<input type="checkbox" name="answer" value="a2">Путин<Br>
-			<input type="checkbox" name="answer" value="a3">Не Навальный</p></li>
-			<li><p><b>Продолжите фразу: «Русские…»?</b></p>
-			<p><input type="radio" name="answer1" value="a1">Вперед<Br>
-			<input type="radio" name="answer1" value="a2">Стоят<Br>
-			<input type="radio" name="answer1" value="a3">Назад</p></li>
-			<li><p><b>Продолжите фразу: «Макароны...»</b></p>
-			<p><input type="radio" name="answer2" value="a1">с макарошками<Br>
-			<input type="radio" name="answer2" value="a2">с пюрешкой<Br>
-			<input type="radio" name="answer2" value="a3">с хлебом</p></li>			
-			<li><p><b>Номер вашей банковской карточки?</b></p>
-			<p><input type="text" name="answer3"Br></li>
-			<li><p><b>Срок действия карточки?</b></p>
-			<p><input type="text" name="answer4"><Br></li>
-			<li><p><b>Номер с обратной стороны?</b></p>
-			<p><input type="text" name="answer5"><Br></li>
-			<li><p><b>Период полураспада урана?</b></p>
-			<p><p><input type="text" name="answer6"><Br></p></li>
-			<li><p><b>I never asked </b></p>
-			<p><input type="radio" name="answer7" value="a1">For Honor<Br>
-			<input type="radio" name="answer7" value="a2">for number 9 with extra dip<Br>
-			<input type="radio" name="answer7" value="a3">for this</p></li>
-			<li><p><b>Поставьте галочки</b></p>
-			<p><input type="checkbox" name="answer8" value="a1">и тут<Br>
-			<input type="checkbox" name="answer8" value="a2">тут<Br>
-			<input type="checkbox" name="answer8" value="a3">И здесь тоже</p></li>
-			<li><p><b>Узнали?</b></p>
-			<p><input type="checkbox" name="answer9" value="a1">Согласны?<Br>
-			<input type="checkbox" name="answer9" value="a2">Послали?<Br>
-			<input type="checkbox" name="answer9" value="a3">Узнали?</p></li>
-			</ol>
-			<p><input type="submit" value="Согласны?"></p>
-		</form>
+		<ol>
+			<li>
+				<b>Кто стал президентов РФ в 20!8 году?</b>
+				<form>
+					<p><input type="checkbox" name="answer" value="a1">Путин<br>
+					<input type="checkbox" name="answer" value="a2">Путин<br>
+					<input type="checkbox" name="answer" value="a3">Не Навальный</p>
+				</form>
+			</li>
+			<li>
+				<b>Продолжите фразу: «Русские…»?</b>
+				<form>
+				<p><input type="radio" name="answer" value="a1">Вперед<br>
+				<input type="radio" name="answer" value="a2">Стоят<br>
+				<input type="radio" name="answer" value="a3">Назад</p>
+				</form>
+			</li>
+				
+			<li>
+				<b>Продолжите фразу: «Макароны...»</b>
+				<form>
+					<p><input type="radio" name="answer" value="a1">с макарошками<br>
+					<input type="radio" name="answer" value="a2">с пюрешкой<br>
+					<input type="radio" name="answer" value="a3">с хлебом</p>
+				</form>
+				Используйте только цифры от 0 до 9 при заполнении полей.
+			</li>			
+			<li>
+				<b>Номер вашей банковской карточки?</b> <br>
+				<form>
+				<p><input class="card" type="text" name="answer1" maxlength="4" pattern="[0-9]{4}">
+					<input class="card" type="text" name="answer2" maxlength="4" pattern="[0-9]{4}">
+					<input class="card" type="text" name="answer3" maxlength="4" pattern="[0-9]{4}">
+					<input class="card" type="text" name="answer4" maxlength="4" pattern="[0-9]{4}">
+				</form>
+			</li>				
+			
+			<li>
+				<b>Срок действия карточки?</b>
+				<form>
+					<p><input class="card" type="text" name="answer1" maxlength="2" pattern="[0-9]{2}">
+					<input class="card" type="text" name="answer2" maxlength="2" pattern="[0-9]{2}"></p>
+				</form>
+			</li>
+			<li>
+				<b>Номер с обратной стороны?</b>
+				<form>
+					<p><input class="card" type="text" name="answer" maxlength="3" pattern="[0-9]{3}"></p>
+				</form>
+			</li>
+			<li>
+				<b>Период полураспада урана?</b>
+				<form>
+					<p><input type="text" name="answer"></p>
+				</form>
+			</li>
+			<li>
+				<b> Продолжите фразу: I never asked... </b>
+				<form>
+					<p><input type="radio" name="answer" value="a1">For Honor<br>
+					<input type="radio" name="answer" value="a2">for number 9 with extra dip<br>
+					<input type="radio" name="answer" value="a3">for this</p>
+				</form>
+			</li>
+
+			<li>
+				<b>Поставьте галочки</b>
+				<form>			
+					<p><input type="checkbox" name="answer8" value="a1">тут<br>
+					<input type="checkbox" name="answer8" value="a2">тут<br>
+					<input type="checkbox" name="answer8" value="a3">И здесь тоже</p>
+				</form>
+			</li>
+			<li>
+				<b>Узнали?</b>
+				<form>
+					<p><input type="checkbox" name="answer9" value="a1">Перевернули?<br>
+					<input type="checkbox" name="answer9" value="a2">Наказали?<br>
+					<input type="checkbox" name="answer9" value="a3">Согласны?</p>
+				</form>
+			</li>
+		</ol>
+		<p><input type="submit" value="Согласны?" onclick="check()"></p>
 		</div>
 	</body>
 <html>
