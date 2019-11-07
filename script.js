@@ -144,3 +144,40 @@ function init(){
 	CreateQuestion("Поставьте галочки", "checkbox",["тут", "тут", "и здесь тоже"],["0","1","2"]);
 	CreateQuestion("Узнали?","checkbox",["Перевернули?","Наказали?", "Согласны?"],["2"]);
 }
+
+var turn = 0;
+function CreateCxZfield(){
+	var n1 = document.getElementById("n1");
+	n1 = n1.value;
+	var n2 = document.getElementById("n2");
+	n2 = n2.value;
+	
+	var x = [];
+	var y =[];
+	var d1 = [];
+	var d2 = [];
+	var letka = document.getElementById("fieldCxZ");
+	for( var i = 0; i < n1; ++i){
+		var arr = [];
+		for (var j = 0; j < n2; ++j) {
+			var button = document.createElement("input");
+			button.id = i+j+"";
+			button.type = "button";
+			button.setAttribute("onclick", "putxoro(this)");
+			button.value = " ";
+			letka.appendChild(button);
+		}
+		letka.appendChild(document.createElement("br"));
+	}
+}
+
+function putxoro(butt) {
+	if (butt.value != " ") return;
+	if (turn % 2 == 0) {
+		butt.value = "x";
+	}
+	else {
+		butt.value = "o";
+	}
+	turn += 1;
+}
