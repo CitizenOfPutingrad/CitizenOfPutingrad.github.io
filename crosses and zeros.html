@@ -9,13 +9,14 @@
 	</head>
 	<body class="FirstBackground">
 		<main>
-			<div class="DivBackground">
+			<div id="mainDiv" class="DivBackground">
 			Введите ширину поля: 
-			<input id="n2" type="text"><br>
-			Введите длину поля
-			<input id="n1" type="text"><br>
-			<input type="button" value="создать поле" onclick="CreateCxZfield()">
+			<input id="n1" type="text" pattern="[0-9]{1,6}"><br>
+			Введите длину поля:
+			<input id="n2" type="text" pattern="[0-9]{1,2}"><br>
+			<input id="startButton" type="button" value="создать поле" onclick="CreateCxZfield()">
 			<div id="fieldCxZ" class="DivBackground">
+			</div>
 			</div>
 		</main>
 	</body>
