@@ -1,3 +1,5 @@
+
+//Тест
 var RightAnswers = [];
 
 function CreateCard(name, count, length) {
@@ -144,40 +146,161 @@ function init(){
 	CreateQuestion("Поставьте галочки", "checkbox",["тут", "тут", "и здесь тоже"],["0","1","2"]);
 	CreateQuestion("Узнали?","checkbox",["Перевернули?","Наказали?", "Согласны?"],["2"]);
 }
+// конец теста
 
+//крестики
 var turn = 0;
-function CreateCxZfield(){
-	var n1 = document.getElementById("n1");
+var n1;
+var n2;
+var restart = false;
+var pointsToWin = 2;
+var arrField = [];
+function CreateCxZfield(){	
+	var x = document.getElementById("n2");
+	if ( !x.checkValidity()) {
+		alert("Введите длину, используя цифры от 0 до 9");
+		return;
+	}
+	if ( (x.value < 2) || (x.value > 25) ) {
+		alert("Введите длину от 2 до 25");
+		return;
+	}
+	x = document.getElementById("n1");
+	if ( !x.checkValidity()) {
+		alert("Введите ширину, используя цифры от 0 до 9");
+		return;
+	}
+	if ( x.value < 2 ) {
+		alert("Введите ширину от 2");
+		return;
+	}
+	removeField();
+	document.getElementById("startButton").value = "начать заного";	
+	n1 = document.getElementById("n1");
 	n1 = n1.value;
-	var n2 = document.getElementById("n2");
-	n2 = n2.value;
-	
-	var x = [];
-	var y =[];
-	var d1 = [];
-	var d2 = [];
+	n2 = document.getElementById("n2");
+	n2 = n2.value;	
+	if ( (n1 > 4) && (n2 > 4) ) 
+		pointsToWin = 5;
+	else if ( (n1 > 3) && (n2 > 3) )
+		pointsToWin = 4;
+	else if ( (n1 > 2 ) && (n2 > 2) )
+		pointsToWin = 3;
 	var letka = document.getElementById("fieldCxZ");
 	for( var i = 0; i < n1; ++i){
-		var arr = [];
+		var localArr = [];
 		for (var j = 0; j < n2; ++j) {
 			var button = document.createElement("input");
-			button.id = i+j+"";
-			button.type = "button";
+			button.setAttribute("type","button");
+			button.setAttribute("i", i );
+			button.setAttribute("j", j );
 			button.setAttribute("onclick", "putxoro(this)");
-			button.value = " ";
+			button.value = "";
+			button.style.width = "1cm";
+			button.style.height = "1cm";
+			button.style.padding = "auto";
+			button.style.fontSize = "5mm";
 			letka.appendChild(button);
+			localArr.push(button);			
 		}
+		arrField.push(localArr);
 		letka.appendChild(document.createElement("br"));
 	}
 }
 
+
+
 function putxoro(butt) {
-	if (butt.value != " ") return;
-	if (turn % 2 == 0) {
+	
+	if (butt.value != "") return;
+	
+	if (turn == 0) {
+		butt.style.color = "red";
 		butt.value = "x";
+		turn++;
 	}
 	else {
+		butt.style.color = "blue";
 		butt.value = "o";
+		turn = 0;
 	}
-	turn += 1;
+	var count = 0;
+	for( i = 0; i < n1; i++){
+		if (arrField[i][butt.getAttribute("j")].value == butt.value){
+			count++;
+			if(count == pointsToWin){
+				winnerDetected();
+				return;
+			}
+		}
+		else
+			count = 0;
+	}
+	count = 0;
+	for ( j = 0; j < n2; j++ ) {
+		if (arrField[butt.getAttribute("i")][j].value == butt.value) {
+			count++;
+			if ( count == pointsToWin) {
+				winnerDetected();
+				return;
+			}
+		}
+		else
+			count = 0;
+	}
+	
+	count = 0;
+	for ( var i = max(butt.getAttribute("i") - butt.getAttribute("j"), 0), j = max(butt.getAttribute("j") - butt.getAttribute("i"), 0); 
+		(i < n1) && (j < n2); i++, j++ ) {		
+		if (arrField[i][j].value == butt.value) {
+			count++;
+			if ( count == pointsToWin) {
+				winnerDetected();
+				return;
+			}
+		}
+		else
+			count = 0;
+	}
+	count = 0;
+	for ( var i = max(parseInt(butt.getAttribute("i"),10) + parseInt(butt.getAttribute("j")) - parseInt(n1 - 1 ), 0), j = min(butt.getAttribute("j") + butt.getAttribute("i"), n2-1); 
+	(i < n1) && (j > 0); i++, j-- ) {	
+		if (arrField[i][j].value == butt.value) {
+			count++;
+			if ( count == pointsToWin) {
+				winnerDetected();
+				return;
+			}
+		}
+		else
+			;
+	}
+		
+	
+}
+
+function winnerDetected(){
+	alert("win");
+	for( var i = 0; i < n1 ; i++)
+		for (var j = 0; j < n2; j++)
+		arrField[i][j].disabled = true;
+}
+
+function removeField(){
+	document.getElementById("mainDiv").removeChild(document.getElementById("fieldCxZ"));
+	var x = document.createElement("div");
+	x.id = "fieldCxZ";
+	x.className = "DivBackground";
+	document.getElementById("mainDiv").insertAdjacentElement("beforeEnd",x);
+	turn = 0;	
+	arrField = [];
+}
+function min(a,b){
+	if (a < b) return a;
+	else return b;
+}
+
+function max(a,b){
+	if (a > b ) return a;
+	else return b;
 }
