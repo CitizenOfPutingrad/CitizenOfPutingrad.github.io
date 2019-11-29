@@ -167,7 +167,8 @@ function CreateCxZfield(){
 		return;
 	}
 	removeField();
-	document.getElementById("startButton").value = "начать заного";	
+	document.getElementById("startButton").value = "начать заново";	
+	document.getElementById("turn").innerHTML = "ход крестиков";
 	n1 = document.getElementById("n1");
 	n1 = n1.value;
 	n2 = document.getElementById("n2");
@@ -210,11 +211,13 @@ function putxoro(butt) {
 		butt.style.color = "red";
 		butt.value = "x";
 		turn++;
+		document.getElementById("turn").innerHTML = "ход ноликов";
 	}
 	else {
 		butt.style.color = "blue";
 		butt.value = "o";
 		turn = 0;
+		document.getElementById("turn").innerHTML = "ход крестиков";
 	}
 	var count = 0;
 	for( i = 0; i < n1; i++){
