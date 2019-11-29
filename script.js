@@ -287,9 +287,13 @@ function winnerDetected(){
 }
 
 function removeField(){
-	document.getElementById("mainDiv").removeChild(document.getElementById("fieldCxZ"));
-	document.getElementById("mainDiv").removeChild(document.getElementById("winnerMessage"));
-	var x = document.createElement("div");
+	var x = document.getElementById("fieldCxZ");
+	if (x != null)
+		document.getElementById("mainDiv").removeChild(x);
+	x = document.getElementById("winnerMessage");
+	if (x != null)
+		document.getElementById("mainDiv").removeChild(x);
+	x = document.createElement("div");
 	x.id = "fieldCxZ";
 	x.className = "DivBackground";
 	document.getElementById("mainDiv").insertAdjacentElement("beforeEnd",x);
