@@ -284,10 +284,19 @@ function winnerDetected(){
 	for( var i = 0; i < n1 ; i++)
 		for (var j = 0; j < n2; j++)
 		arrField[i][j].disabled = true;
+	var x = document.createElement("p");
+	x.id = "winnerMessage";
+	if (turn == 0 )
+		x.innerHTML = "Победили нолики!";
+	else
+		x.innerHTML = "Победили крестики!";
+	var y = document.getElementById("fieldCxZ");
+	y.insertAdjacentElement("beforeEnd",x)
 }
 
 function removeField(){
 	document.getElementById("mainDiv").removeChild(document.getElementById("fieldCxZ"));
+	document.getElementById("mainDiv").removeChild(document.getElementById("winnerMessage"));
 	var x = document.createElement("div");
 	x.id = "fieldCxZ";
 	x.className = "DivBackground";
