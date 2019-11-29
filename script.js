@@ -272,7 +272,6 @@ function putxoro(butt) {
 }
 
 function winnerDetected(){
-	alert("win");
 	for( var i = 0; i < n1 ; i++)
 		for (var j = 0; j < n2; j++)
 		arrField[i][j].disabled = true;
@@ -296,7 +295,7 @@ function removeField(){
 	x = document.createElement("div");
 	x.id = "fieldCxZ";
 	x.className = "DivBackground";
-	document.getElementById("mainDiv").insertAdjacentElement("beforeEnd",x);
+	document.getElementById("mainDiv").insertAdjacentElement("beforebegin",x);
 	turn = 0;	
 	arrField = [];
 }
