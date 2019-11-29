@@ -157,21 +157,13 @@ var pointsToWin = 2;
 var arrField = [];
 function CreateCxZfield(){	
 	var x = document.getElementById("n2");
-	if ( !x.checkValidity()) {
-		alert("Введите длину, используя цифры от 0 до 9");
-		return;
-	}
-	if ( (x.value < 2) || (x.value > 25) ) {
-		alert("Введите длину от 2 до 25");
+	if ( ( !x.checkValidity()) || ((x.value < 2) || (x.value > 25))) {
+		alert("Введите длину от 2 до 25, используя цифры от 0 до 9");
 		return;
 	}
 	x = document.getElementById("n1");
-	if ( !x.checkValidity()) {
-		alert("Введите ширину, используя цифры от 0 до 9");
-		return;
-	}
-	if ( x.value < 2 ) {
-		alert("Введите ширину от 2");
+	if ( !x.checkValidity() || (x.value < 2)) {
+		alert("Введите ширину от 2, используя цифры от 0 до 9");
 		return;
 	}
 	removeField();
