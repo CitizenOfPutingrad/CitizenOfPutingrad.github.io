@@ -179,6 +179,7 @@ function CreateCxZfield(){
 		pointsToWin = 4;
 	else if ( (n1 > 2 ) && (n2 > 2) )
 		pointsToWin = 3;
+	else pointsToWin = 2;
 	var letka = document.getElementById("fieldCxZ");
 	for( var i = 0; i < n1; ++i){
 		var localArr = [];
@@ -285,7 +286,7 @@ function winnerDetected(){
 	else
 		x.innerHTML = "Победили крестики!";
 	var y = document.getElementById("fieldCxZ");
-	y.insertAdjacentElement("beforeEnd",x)
+	y.insertAdjacentElement("afterbegin",x)
 }
 
 function removeField(){
@@ -297,8 +298,8 @@ function removeField(){
 		document.getElementById("mainDiv").removeChild(x);
 	x = document.createElement("div");
 	x.id = "fieldCxZ";
-	x.className = "DivBackground";
-	document.getElementById("mainDiv").insertAdjacentElement("beforebegin",x);
+	x.className = "centerAlign";
+	document.getElementById("mainDiv").insertAdjacentElement("beforeend",x);
 	turn = 0;	
 	arrField = [];
 }
