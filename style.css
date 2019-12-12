@@ -28,3 +28,7 @@ table {
 	font-size: 30px;
 	font-weight:100;
 }
+div .centerAlign {
+	font-size: 30px;
+	text-align: center;
+}
