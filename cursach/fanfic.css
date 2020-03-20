@@ -1,0 +1,46 @@
+body {
+	background-image: url(bg.jpg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+	background-color: 	rgb(238, 232, 170);
+	
+	padding-left: 0%;
+	padding-right: 0%;
+	
+}
+main {
+	display: table-row;
+	height: 100%;
+}
+footer {
+	margin-top: 5mm;
+	padding-top: 5mm;
+	padding-bottom: 5mm;
+	
+	color: rgb(238, 232, 170);
+	background-color:#773B18;
+	
+}
+footer a {
+	color: #FF9A9A;	
+}
+footer a:hover {
+	color: rgb(255, 255, 255);	
+}
+nav {
+	background-color: #D43E3E;
+}
+.hint {
+	border-radius: 5px;
+}
