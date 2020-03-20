@@ -41,8 +41,8 @@ footer a:hover {
 nav {
 	background-color: #D43E3E;
 }
-nav a {
-	color: #FF9A9A;	
+nav a, nav.nav-link {
+	background-color: rgb(238, 232, 170);
 }
 nav a:hover {
 	color: rgb(255, 255, 255);	
