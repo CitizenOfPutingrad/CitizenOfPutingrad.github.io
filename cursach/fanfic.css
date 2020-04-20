@@ -50,3 +50,66 @@ nav a:hover {
 .hint {
 	border-radius: 5px;
 }
+.description {
+	border: 4px ridge red;
+	margin: 3mm 1mm 1mm 1mm;
+	padding-left: 2mm;
+	padding-bottom: 4 mm;
+	padding-right: 2mm;
+}
+
+.description-categories {
+	padding-top: 2mm;
+}
+
+.description-title{
+	
+	border-bottom: 3px solid black;	
+	padding-top: 1mm;
+	padding-bottom: 1mm;
+	
+	font-size: 28px;
+	margin: 0mm 0mm 0mm 0mm;
+}
+
+.description-desctag {
+	font-size: 18px;
+	font-weight: bold;
+}
+.description-notes {
+	border-top: 3px solid black;
+}
+
+.chapter {
+	border-bottom: 1px dashed rgba(166,166,166,0.5);
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+}
+.chapter-end {
+	border-bottom: none;
+	margin-bottom: 2mm;
+}
+.subsection {
+	font-size: 24px;
+	
+	border-bottom: 3px solid black;	
+	border-top: 1px solid rgba(0,0,0,0.25);
+}
+
+.creators {
+	margin-bottom: 1mm;
+}
+
+.descriptionnt {
+	padding: 1mm 2mm 2mm 2mm;
+}
+
+.comment {
+	padding-left: 4mm;
+	padding-top: 2mm;
+}
+
+.profile-image{
+	width: 45px;
+	height: 45px;
+}
