@@ -1,0 +1,61 @@
+{
+  "1": {
+    "category": "neutral",
+    "name": "Кабачковое противостояние",
+    "author": [0,"Данил Кобачков", "images/profile_icon.svg"],
+    "fandom": [0,"The JoJo's Bizarre Adventure"],
+    "status": "Завершен",
+    "tags": [[0,"кровь"], [1, "кишки"], [69,"матюки"],[14,"убийства"], [1488, "и голые кабачки"]],
+    "description": "Жили были два мусчины, они полюбили друг друга и все у них хорошо",
+    "category_image": "images/category-image.svg",
+    "profile_image": "images/profile_icon.svg",
+    "rating": ["RGB","0"]
+  },
+  "2": {
+    "category": "gay",
+    "name": "Boku no Pico: remastered",
+    "author": [1,"Crayzy Man", "images/profile_icon.svg"],
+    "fandom": [1,"Boku no Pico"],
+    "status": "Не продолжайте",
+    "tags": [[0,"кровь"], [1, "кишки"], [69,"матюки"],[14,"убийства"], [1488, "и голые кабачки"]],
+    "description": "фываывафывафыв",
+    "category_image": "images/category-image.svg",
+    "profile_image": "images/profile_icon.svg",
+    "rating": ["HARDCORE","2"]
+  },
+  "3": {
+    "category": "family",
+    "name": "Смешная нарезка детей",
+    "author": [2,"Jorjia Lucasa" , "images/profile_icon.svg"],
+    "fandom": [2,"Star wars"],
+    "status": "смешно",
+    "tags": [[0,"кровь"], [1, "кишки"], [69,"матюки"],[14,"убийства"], [1488, "и голые кабачки"]],
+    "description": "Заходит как-то Энакин в юнлингам, примеряет световой меч, а он им как раз.",
+    "category_image": "images/category-image.svg",
+    "profile_image": "images/profile_icon.svg",
+    "rating": ["He-he Classic","0"]
+  },
+  "4": {
+    "category": "sexygay",
+    "name": "The last of ass",
+    "author": [3,"xXxDaniel2000RUSxXx", "images/profile_icon.svg"],
+    "fandom": [3,"The Last of Us"],
+    "status": "продолжается",
+    "tags": [[0,"кровь"], [1, "кишки"], [69,"матюки"],[14,"убийства"], [1488, "и голые кабачки"]],
+    "description": "Вы думали, что слитая концовка - это смешно, но нет, это была я, ДИАНА! ХАХАХАХАХАХАХАХАХАХА АХАХАХХА АХАХ. Живите теперь с этим  <br> P.s. Я я я.",
+    "category_image": "images/category-image.svg",
+    "rating": ["N+","1"]
+  },
+  "5": {
+    "category": "another",
+    "name": "Как приготовить кабачки",
+    "author": [0,"Данил Кобачков", "images/profile_icon.svg"],
+    "fandom": [4,"Оригинал"],
+    "status": "приостановлен",
+    "tags": [[0,"кровь"], [1, "кишки"], [69,"матюки"],[14,"убийства"], [1488, "и голые кабачки"]],
+    "description": "Жарим, варим, парим кабачки",
+    "category_image": "images/category-image.svg",
+    "profile_image": "images/profile_icon.svg",
+    "rating": ["+++", "0"]
+  }
+}
